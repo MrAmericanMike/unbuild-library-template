@@ -1,0 +1,43 @@
+{
+	"name": "unbuild-library-template",
+	"version": "0.0.0",
+	"description": "Unbuild Library Template",
+	"author": "MrAmericanMike",
+	"license": "MIT",
+	"main": "dist/main.cjs",
+	"module": "dist/main.mjs",
+	"types": "dist/main.d.ts",
+	"exports": {
+		".": {
+			"require": "./dist/main.cjs",
+			"import": "./dist/main.mjs"
+		}
+	},
+	"scripts": {
+		"build": "unbuild",
+		"prepublishOnly": "unbuild",
+		"tsc": "tsc"
+	},
+	"files": [
+		"dist/**/*",
+		"package.json",
+		"README.md"
+	],
+	"keywords": [
+		"unbuild",
+		"library",
+		"template"
+	],
+	"homepage": "https://github.com/MrAmericanMike/unbuild-library-template#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MrAmericanMike/unbuild-library-template.git"
+	},
+	"bugs": {
+		"url": "https://github.com/MrAmericanMike/unbuild-library-template/issues"
+	},
+	"devDependencies": {
+		"typescript": "5.6.2",
+		"unbuild": "2.0.0"
+	}
+}
